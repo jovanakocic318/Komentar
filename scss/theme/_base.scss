@@ -7,12 +7,16 @@ img{
     max-width: 100%;
 }
 
+body{
+    font-family: $font-roboto;
+    font-weight: $font-weight-regular;
+}
 // Placeholder for image
 
 
 .img-holder{
     position: relative;
-    background: #ccc url('assets/logo-small.png') no-repeat center center;
+    background: $gray-100 url('assets/logo-small.png') no-repeat center center;
     background-size: 50px auto;
     overflow:hidden;
     display:block;
@@ -21,7 +25,11 @@ img{
         display: block;;
         width: 100%;
     }
-    
+    &.size-4{
+        &:after{
+            padding-top: 30%;
+        }
+    }
     &.size-1by1{
         &:after{
             padding-top: 100%;

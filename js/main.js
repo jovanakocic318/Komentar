@@ -49,7 +49,10 @@ $(document).ready(function () {
     
     
     
-    
+     $('.search-icon').click(function(){
+      $(this).next().slideToggle();
+      
+  });
 
 
 

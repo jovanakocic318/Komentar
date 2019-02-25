@@ -1,1 +1,186 @@
+//Header variabables;
+$header-link-color: $gray-700;
+$light-gray:  $gray-100;
+
+//Global class
+.naslovi{
+    position: relative;
+    h4, h6{
+        display: inline-block; 
+        font-family: $font-roboto;
+        font-weight: $font-weight-medium;
+        position: absolute;
+    }
+    h6{
+        font-size: $small-font-size;
+        margin-top: -40px;
+        margin-left: 119px;
+    }  
+    h4{
+        margin-top: -30px;
+        margin-left: 70px; 
+    }
+}
+
+
+//header scss
+
+header{
+    //header-top scss start
+    .header-top{
+        border-bottom: 2px solid $light-gray;
+
+        .container{
+            padding-bottom:0.5rem;
+            .mala-slika{
+                display: none;
+            }
+            a{
+                color: $black;
+            }
+            .header-icons{
+                padding-top: 15px;
+                ul{
+                    li{
+                        display: inline-block;
+                        margin-right: 10px;
+                        a{
+                            color: $header-link-color;
+                        }
+                    }
+
+                }
+                .login{
+                    margin-bottom: 12px;
+                    a{
+                        color: $header-link-color;
+                        border: 1px solid #8AB957;
+                        border-radius: $border-radius;
+                        padding: 5px 6px 4px 6px;
+                    } 
+                }
+            }
+        }
+    }
+    //header-top scss end
+
+    //header-bottom scss start
+    .header-bottom{
+
+        .navbar{
+            padding: 0rem;
+            position: relative;
+            top: -2px;
+            .navbar-brand{
+                display:block;
+            }
+            .search-icon{
+                height: 18px;	
+                width: 18px;
+                line-height: 18px;
+                color: $header-link-color;
+                cursor: pointer;
+            }
+            .search-form{
+                position: absolute;
+                top:100%;
+                left: 0;
+                width: 100%;
+                display: none;
+            }
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        text-align: center;
+                        font-size: 1.2rem;
+                        padding: 0rem 0rem !important;
+                        span{
+                            border-top: 2px solid transparent;
+                            border-color: transparent;
+                            padding: 8px 8px;
+                        }
+                        &:hover span, &.active span{
+                            border-color: inherit;
+                            background-color: $light-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //header-bottom scss end
+}
+//header scss end
+
+
+
+@media(min-width:387px){
+    header{
+        .header-bottom{
+            .naslovi{
+                display:block;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 768px){
+    //Global class
+    .naslovi{
+        h6{
+            margin-left: 125px;
+        }  
+    }
+
+
+    header{
+        .header-top{
+            .container{
+                .mala-slika{
+                    display: block;
+                }
+                .header-icons{
+                    padding-top: 30px;
+                }
+            }
+        }
+        .header-bottom{
+            .naslovi{
+                display:none;
+            }
+            .navbar{
+
+                .navbar-brand{
+                    display:none; 
+                }
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            font-size: 1rem ;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media(min-width: 992px){
+    header{
+        .header-bottom{
+            .navbar{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            font-size: 1.2rem !important;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+
+
+}
 
