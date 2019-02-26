@@ -71,6 +71,9 @@ header{
             padding: 0rem;
             position: relative;
             top: -2px;
+            .search-wrapper{
+                z-index: 1
+            }
             .navbar-brand{
                 display:block;
             }

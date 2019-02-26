@@ -6,6 +6,7 @@
 // Color system
 
 $white:    #fff !default;
+$gray-80: #F0F0F0 !default;
 $gray-100: #F2F2F2 !default;
 $gray-200: #EAEAEA !default;
 $gray-300: #dee2e6 !default;
@@ -153,6 +154,7 @@ $sizes: map-merge(
     10: 10%,
     20: 20%,
     25: 25%,
+    30: 30%,
     50: 50%,
     70: 70%,
     75: 75%,
@@ -213,7 +215,8 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  // sm: 540px,
+  //sm: 540px,
+  
   md: 720px,
   lg: 960px,
   xl: 1190px
@@ -226,7 +229,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
+$grid-columns:                18 !default;
 $grid-gutter-width:           30px !default;
 
 

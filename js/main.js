@@ -1,29 +1,29 @@
 $(document).ready(function () {
-    
-    
-    
+
+
+
     //FILL ELEMENTS DEPENDS OF CATEGORY
     $('[data-category]').each(function () {
         var color = $(this).data('category');
         $(this).find('.category-bg').css('background', color);
         $(this).find('.category-border').css('border-color', color);
-        $(this).find('.category-color').css('color', color );
+        $(this).find('.category-color').css('color', color);
     });
-    
-    
+
+
     // EASE SCROLL
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
+//    $(document).on('click', 'a[href^="#"]', function (event) {
+//        event.preventDefault();
+//
+//        $('html, body').animate({
+//            scrollTop: $($.attr(this, 'href')).offset().top
+//        }, 800);
+//    });
 
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 800);
-    });
-    
-    
+
     //ANIMATION 
-    
+
     function animation() {
         var windowHight = $(window).height();
         var scroll = $(window).scrollTop();
@@ -45,14 +45,30 @@ $(document).ready(function () {
     $(window).scroll(function () {
         animation();
     });
-    
-    
-    
-    
-     $('.search-icon').click(function(){
-      $(this).next().slideToggle();
-      
-  });
+
+
+
+
+    $('.search-icon').click(function () {
+        $(this).next().slideToggle();
+
+    });
+    // OWL CAROUSEL START HERE
+    if ($('.owl-carousel').length > 0) {
+
+
+        //lead slider
+        $('.lead-slider').owlCarousel({
+            items: 1,
+            dots: false,
+            loop: true,
+            nav: true
+
+        });
+    }
+
+  
+});
 
 
 
@@ -60,6 +76,6 @@ $(document).ready(function () {
 
 
 
-});//end document.ready
+
 
 
