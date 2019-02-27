@@ -25,14 +25,15 @@ body{
         display: block;;
         width: 100%;
     }
-    &.size-4{
-        &:after{
-            padding-top: 30%;
-        }
-    }
+   
     &.size-1by1{
         &:after{
             padding-top: 100%;
+        }
+    }
+    &.size-5by2{
+        &:after{
+            padding-top: 40%;
         }
     }
     &.size-4by3{
