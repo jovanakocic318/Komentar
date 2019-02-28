@@ -1,0 +1,247 @@
+$gray-850: #8D8B8B;
+
+
+.exclusive{
+    .container{
+        .row{
+            .col-sm-18
+            {
+                order:2;
+                .exclusive-discussions
+                {   
+                    background: #FFF;
+                    &:first-child:before {
+                        content:'';
+                        width:93%;
+                        height:3px;
+                        background:linear-gradient(to right, $green, $white);
+                        top:-3px;
+                        position: absolute
+                    }
+                    .exclusive-title{
+                        background:linear-gradient(to right, $white, #F3F3F3);
+                        h6{
+                            text-align: center;
+                            color: $dark-gray;
+                            padding: 0.5rem 2rem;
+                            font-family: $font-roboto;
+                            font-weight: $font-weight-medium;
+                        }
+                    }
+                    .exclusive-item{
+                        figure{
+                            img{
+                                width: 80%;
+                                margin-left: 1.78rem;
+                            }
+
+                        }
+                        .exclusive-item-detail{
+                            padding-left: 12px;
+                            padding-right: 12px;
+                            h6{
+                                font-family: $font-roboto;
+                                font-weight: $font-weight-normal;
+                                a{
+                                    color: $black;  
+                                }
+                            }
+                            p{
+                                font-size:  0.8rem;
+                            }
+                        }
+                        ul{
+                            .numbers-of-comment{
+                                display: inline;
+                                margin-left:6px;
+                                margin-right:11px;
+                                color: $green;
+                                font-family: $font-roboto;
+                                font-weight: $font-weight-bold;
+                                font-size: 1.7rem;
+                                position: relative;
+                                top:-2.8rem;
+
+                            }
+                            .commentator{
+                                display: inline-block;
+                                .commentator-name{
+                                    color: $gray-850;
+                                    margin-bottom: 3px;
+                                }
+                                .commentator-quotation{
+                                    color: $gray-800;
+                                    margin-bottom: 2px;
+                                    font-size: 1rem;
+                                    overflow: hidden;
+                                    max-height: 2.6rem;
+                                    line-height: 1.3rem;
+
+                                }
+                                .commentator-time{
+                                    color: $gray-700;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-sm-18{
+                order: 1;
+                .row{
+                    .col-xs-18{  
+                        .news-item{
+                            .news-item-detail{
+                                background: #fff;
+                                padding: 18px;
+                                margin-bottom: 1rem;
+                                h6{
+                                    a{
+                                        font-size: 1rem;
+                                        overflow: hidden;
+                                        max-height: 3.9rem;
+                                        line-height: 1.3rem;
+                                        display: block;
+                                        word-wrap: break-word;
+                                        color: $black;
+
+                                    }
+                                }
+                                p{
+                                    span{
+                                        font-size: 0.8rem;
+                                        color: $gray-700;
+                                    }
+                                }
+                                .number{
+                                    position: absolute;
+                                    right: 9px;
+                                    z-index: 2;
+                                    top:70%;
+                                    .number-item{
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 30px;
+                                        top: 10%;
+                                        color: $white;
+                                        font-weight: $font-weight-medium;
+                                        font-size: $small-font-size;
+                                        right: 8%;
+                                        z-index: 3;
+                                        text-align: center;
+                                        padding-top: 5px;
+                                        
+                                        &:after{
+                                            content: '';
+                                            position: absolute;
+                                            left: 24.5px;
+                                            top: 20px;
+                                            bottom:-8px;
+                                            border-width: 3px;
+                                            border-style: solid;
+                                            border-color: transparent;
+                                            border-top-color: $gray-500;
+                                            border-left-color: $gray-500;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 576px){
+    .exclusive{
+
+        .container{
+            .row{
+                .col-sm-18
+                {
+                    .exclusive-discussions
+                    {   
+                        
+                        &:first-child:before {
+                           
+                            width:95%;
+                           
+                        }
+                        .exclusive-item{
+                            .exclusive-item-detail{
+                                padding-left: 2rem;
+                            }
+                            ul{
+                                padding-left: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .exclusive{
+
+        .container{
+            .row{
+                .col-sm-18
+                {
+                    .exclusive-discussions
+                    {   
+                        
+                        &:first-child:before {
+                           
+                            width:96%;
+                           
+                        }
+                        .exclusive-item{
+                            .exclusive-item-detail{
+                                padding-left: 2rem;
+                            }
+                            ul{
+                                padding-left: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 992px){
+    .exclusive{
+
+        .container{
+            .row{
+                .col-sm-18
+                {
+                    .exclusive-discussions
+                    {   
+                        
+                        &:first-child:before {
+                           
+                            width:90%;
+                           
+                        }
+                        .exclusive-item{
+                            .exclusive-item-detail{
+                                padding-left: 0;
+                            }
+                            ul{
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

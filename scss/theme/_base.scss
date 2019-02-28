@@ -41,6 +41,11 @@ body{
             padding-top: 75%;
         }
     }
+    &.size-10by1{
+        &:after{
+            padding-top: 30%;
+        }
+    }
     &.size-16by9{
         &:after{
             padding-top: 56.25%;

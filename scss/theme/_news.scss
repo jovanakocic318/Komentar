@@ -15,15 +15,20 @@ $dark-gray: $gray-900;
 }
 
 .news{
+    margin-bottom:2rem;
     .container{
         .row{
+            padding-left:10px;
+            padding-right: 10px;
             .col-xs-18:first-of-type{
                 order: 3;
                 padding-right: 0px !important;
                 padding-left: 0px;
+                
+                
                 .bot
                 {
-                    background: $white;
+                    background: #FFF;
                     &:first-child:before {
                         content:'';
                         width:94.4%;
@@ -70,6 +75,7 @@ $dark-gray: $gray-900;
             }
             .col-xs-18{
                 order:1;
+                margin-bottom: 1rem;
                 .news-slider{
                     .lead-slider-wrapper{
                         position: relative;
@@ -158,7 +164,7 @@ $dark-gray: $gray-900;
             }
             .col-xs-18{
                 order: 2;
-                background: $white;
+                background: #FFF;
                 .news-tab{
                     .nav-item{
                         .nav-link{
@@ -250,6 +256,7 @@ $dark-gray: $gray-900;
 
 @media(min-width: 576px){
 .news{
+     margin-bottom:2rem;
     .container{
         .row{
             .col-sm-9{
@@ -258,7 +265,7 @@ $dark-gray: $gray-900;
                 padding-left: 0px;
                 .bot
                 {
-                    background: $white;
+                    background: #FFF;
                     &:first-child:before {
                         content:'';
                         width:94.4%;
@@ -393,7 +400,7 @@ $dark-gray: $gray-900;
             }
             .col-sm-9{
                 order: 2;
-                background: $white;
+                background: #FFF;
                 .news-tab{
                     .nav-item{
                         .nav-link{
@@ -483,8 +490,10 @@ $dark-gray: $gray-900;
 @media (min-width:768px){
 
     .news {
+         margin-bottom:2rem;
         .container{
             .row{
+                .col
                 .col-sm-18{
                     .news-slider{
                         .lead-slider-wrapper{
@@ -518,7 +527,7 @@ $dark-gray: $gray-900;
                     padding-left: 0px;
 
                     .bot{
-                        background: $white;
+                        background: #FFF;
                         &:first-child:before {
                             content:'';
                             width:100%;
@@ -650,7 +659,7 @@ $dark-gray: $gray-900;
                 }
                 .col-lg-5{
                     order: 3;
-                    background: $white;
+                    background: #FFF;
                     .news-tab{
                         .nav-item{
                             .nav-link{
