@@ -32,9 +32,9 @@ $dark-gray: $gray-900;
                     background: #FFF;
                     &:first-child:before {
                         content:'';
-                        width:94.4%;
+                        width:100%;
                         height:3px;
-                        background:linear-gradient(to right, $green, $white);
+                        background:linear-gradient(to right, $green, transparent);
                         top:-3px;
                         position: absolute
                     }
@@ -167,7 +167,7 @@ $dark-gray: $gray-900;
             .col-xs-18{
                 order: 2;
                 background: $gray-100;
-                height:420px;
+                
                 .news-tab{
                     .nav-item{
                         .nav-link{
@@ -184,7 +184,7 @@ $dark-gray: $gray-900;
                             content:'';
                             width:100%;
                             height:3px;
-                            background:linear-gradient(to right, $green, $white);
+                            background:linear-gradient(to right, $green, transparent);
                             top:-3px;
                             position: absolute;
                             left: 0;
@@ -209,6 +209,9 @@ $dark-gray: $gray-900;
                                 line-height: 1.3rem;
                                 display: block;
                                 word-wrap: break-word;
+                                a{
+                                    color: #000;
+                                }
 
                             }
                             p{
@@ -276,9 +279,9 @@ $dark-gray: $gray-900;
                         background: #FFF;
                         &:first-child:before {
                             content:'';
-                            width:94.4%;
+                            width:100%;
                             height:3px;
-                            background:linear-gradient(to right, $green, $white);
+                            background:linear-gradient(to right, $green, transparent);
                             top:-3px;
                             position: absolute
                         }
@@ -427,7 +430,7 @@ $dark-gray: $gray-900;
                                 content:'';
                                 width:100%;
                                 height:3px;
-                                background:linear-gradient(to right, $green, $white);
+                                background:linear-gradient(to right, $green, transparent);
                                 top:-3px;
                                 position: absolute;
                                 left: 0;
@@ -542,7 +545,7 @@ $dark-gray: $gray-900;
                             content:'';
                             width:100%;
                             height:3px;
-                            background:linear-gradient(to right, $green, $white);
+                            background:linear-gradient(to right, $green, transparent);
                             top:-3px;
                             position: absolute
                         }
@@ -686,7 +689,7 @@ $dark-gray: $gray-900;
                                 content:'';
                                 width:100%;
                                 height:3px;
-                                background:linear-gradient(to right, $green, $white);
+                                background:linear-gradient(to right, $green, transparent);
                                 top:-3px;
                                 position: absolute;
                                 left: 0;

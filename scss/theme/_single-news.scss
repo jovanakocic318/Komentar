@@ -204,22 +204,27 @@
                         color:#3E3E3E;
                         font-family: $font-roboto;
                         font-weight: $font-weight-medium;
+                        margin-bottom: 0rem;
                     }
                     .up, .down, .report{
                         background: #FAFAFA;
                         margin-left: 10px;
                         text-align: center;
                         margin:15px;
+                        padding: 3px;
 
                     }
                     .report{
                         .report-title{
                             color: #3E3E3E;
                         }
+                        p{
+                            margin-bottom: 0rem;
+                        }
                     }
                 }
                 .comment-item-vote-send{
-                    padding: 2px;
+                   
                     form{
                         background: #FAFAFA; 
                     }

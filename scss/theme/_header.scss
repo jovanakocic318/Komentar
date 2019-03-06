@@ -73,6 +73,12 @@ header{
             top: -2px;
             .search-wrapper{
                 z-index: 1;
+                font-size: 1rem;
+                margin-right: 1rem;
+                color: #979797;
+                .search-icon{
+                    font-size: 1.5rem
+                }
                 .search-form{
                     .form-group{
                         padding: 1rem;
@@ -89,7 +95,7 @@ header{
                                         color: #FFF;
                                     }
                                     span{
-                                       
+
                                         &:hover{
                                             color: #FFF;
                                         }
@@ -100,6 +106,14 @@ header{
                     }
                 }
             }
+            .navbar-toggler{
+                border-color: $green;
+                .navbar-toggler-icon{
+                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+                }
+            }
+
+
             .navbar-brand{
                 display:block;
             }
@@ -126,7 +140,10 @@ header{
                         span{
                             border-top: 2px solid transparent;
                             border-color: transparent;
-                            padding: 8px 8px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            padding-top: 8px;
+                            padding-bottom: 15px;
                         }
                         &:hover span, &.active span{
                             border-color: inherit;
