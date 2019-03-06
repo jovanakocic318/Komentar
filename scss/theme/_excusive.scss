@@ -2,6 +2,7 @@ $gray-850: #8D8B8B;
 
 
 .exclusive{
+    margin-bottom: 2rem;
     .container{
         .row{
             .col-sm-18
@@ -131,7 +132,7 @@ $gray-850: #8D8B8B;
                                         z-index: 3;
                                         text-align: center;
                                         padding-top: 5px;
-                                        
+
                                         &:after{
                                             content: '';
                                             position: absolute;
@@ -166,11 +167,11 @@ $gray-850: #8D8B8B;
                 {
                     .exclusive-discussions
                     {   
-                        
+
                         &:first-child:before {
-                           
+
                             width:95%;
-                           
+
                         }
                         .exclusive-item{
                             .exclusive-item-detail{
@@ -195,11 +196,11 @@ $gray-850: #8D8B8B;
                 {
                     .exclusive-discussions
                     {   
-                        
+
                         &:first-child:before {
-                           
+
                             width:96%;
-                           
+
                         }
                         .exclusive-item{
                             .exclusive-item-detail{
@@ -224,11 +225,11 @@ $gray-850: #8D8B8B;
                 {
                     .exclusive-discussions
                     {   
-                        
+
                         &:first-child:before {
-                           
+
                             width:90%;
-                           
+
                         }
                         .exclusive-item{
                             .exclusive-item-detail{
@@ -245,3 +246,11 @@ $gray-850: #8D8B8B;
     }
 }
 
+@media(min-width:1200px){
+    .four, .five{
+        margin-top: 1.6rem;
+    }
+    .six{
+        margin-top: 2.6rem;
+    }
+}

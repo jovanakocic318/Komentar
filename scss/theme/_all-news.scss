@@ -1,0 +1,164 @@
+.mb-0{
+    margin-bottom: 0;
+}
+.all-news-main{
+    padding-bottom: 0rem;
+}
+.all-news{
+    padding-top: 2rem;
+    background: $gray-100;
+}
+
+.next{
+
+    color: #FFF;
+    font-size: 16px;
+    padding: 5px;
+    background-color: $green;
+
+
+}
+.news-list{
+    background: $gray-100;
+    .exclusive-discussions
+    {   
+        background: #FFF;
+        &:first-child:before {
+            content:'';
+            width:93%;
+            height:3px;
+            background:linear-gradient(to right, $green, $white);
+            top:-3px;
+            position: absolute
+        }
+        .exclusive-title{
+            background:linear-gradient(to right, $white, #F3F3F3);
+            h6{
+                text-align: center;
+                color: $dark-gray;
+                padding: 0.5rem 2rem;
+                font-family: $font-roboto;
+                font-weight: $font-weight-medium;
+            }
+        }
+        .exclusive-item{
+            figure{
+                img{
+                    width: 80%;
+                    margin-left: 1.78rem;
+                }
+
+            }
+            .exclusive-item-detail{
+                padding-left: 12px;
+                padding-right: 12px;
+                h6{
+                    font-family: $font-roboto;
+                    font-weight: $font-weight-normal;
+                    a{
+                        color: $black;  
+                    }
+                }
+                p{
+                    font-size:  0.8rem;
+                }
+            }
+            ul{
+                .numbers-of-comment{
+                    display: inline;
+                    margin-left:6px;
+                    margin-right:11px;
+                    color: $green;
+                    font-family: $font-roboto;
+                    font-weight: $font-weight-bold;
+                    font-size: 1.7rem;
+                    position: relative;
+                    top:-2.8rem;
+
+                }
+                .commentator{
+                    display: inline-block;
+                    .commentator-name{
+                        color: $gray-850;
+                        margin-bottom: 3px;
+                    }
+                    .commentator-quotation{
+                        color: $gray-800;
+                        margin-bottom: 2px;
+                        font-size: 1rem;
+                        overflow: hidden;
+                        max-height: 2.6rem;
+                        line-height: 1.3rem;
+
+                    }
+                    .commentator-time{
+                        color: $gray-700;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .start-list-news-item{
+        margin-bottom: 3rem;
+        .list-news-item{
+            background: #FFF;
+            margin-bottom: 1rem;
+            .list-news-item-detail{
+                padding:10px;
+                .description{
+                    padding-right: 20px;
+                }
+                h5{
+
+                    font-family: $font-roboto;
+                    font-weight: $font-weight-normal;
+                    a{
+                        color: $gray-800;  
+                        font-size: 15px;
+                    }
+
+                }  
+                .number{
+                    .number-item{
+                        position: absolute;
+                        height: 20px;
+                        width: 30px;
+
+                        color: $white;
+                        font-weight: $font-weight-medium;
+                        font-size: $small-font-size;
+                        right: -4px;
+                        z-index: 3;
+                        text-align: center;
+                        padding-top: 5px;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            width: 6px;
+                            height: 8px;
+                            left: 20px;
+                            bottom:-8px;
+                            border-width: 3px;
+                            border-style: solid;
+                            border-color: transparent;
+                            border-top-color: $gray-500;
+                            border-left-color: $gray-500;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+@media(min-width: 1201px){
+
+    .aside-elements{
+        display:block;
+    } 
+}

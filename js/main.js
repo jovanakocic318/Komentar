@@ -65,8 +65,33 @@ $(document).ready(function () {
             nav: true
 
         });
+        
+        $('.lead-slider-news-comments').owlCarousel({
+            items: 3,
+            loop:true,
+            margin:20,
+            responsive:{
+                0:{
+                    items:1
+                },
+               500:{
+                    items:2
+                },
+                991:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+                
+            }
+            
+            
+        });
     }
-
+    
+    
+   
   
 });
 

@@ -184,19 +184,9 @@ and open the template in the editor.
         </header>
         <!--Header end-->
         <!--Main start-->
-        <main style="background: #F2F2F2">
-            <!--Picture section start-->
-            <section class="picture">
-                <div class="container">
-                    <div class="picture-item img-holder size-5by2 ">
-                        <img src="img/baner 970x400.png" alt=""/>
-                    </div>
-                </div>
-            </section>
-            <!--Picture section end-->
-
+        <main class="all-news-main">
             <!--News section start-->
-            <section class="news">
+            <section class="news all-news mb-0">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-18 col-sm-9 col-md-9 col-lg-4">
@@ -245,6 +235,14 @@ and open the template in the editor.
                                                 <p>26.11.2018 09:50</p>
                                             </div>
                                             <a class="fa fa-check-circle w-20 m-auto"> 892</a>
+                                        </li>
+                                        <li class="d-flex">
+                                            <a class="fa fa-user-circle w-10"></a>
+                                            <div class="user w-70 ml-2">
+                                                <h6>Aleksa Aleksic</h6>
+                                                <p>26.11.2018 09:50</p>
+                                            </div>
+                                            <a class="fa fa-check-circle w-20 m-auto"> 990</a>
                                         </li>
                                         <li class="d-flex">
                                             <a class="fa fa-user-circle w-10"></a>
@@ -457,8 +455,8 @@ and open the template in the editor.
             </section>
             <!--News section end-->
 
-            <!--Exclusive section start-->
-            <section class="exclusive">
+            <!--Section News list start-->
+            <section class="news-list">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-18 col-md-18 col-lg-4">
@@ -513,501 +511,221 @@ and open the template in the editor.
                                 </div>
                             </article> 
                         </div>
-                        <div class="col-sm-18 col-md-18 col-lg-14">
-                            <div class="row">
-                                <div class="col-xs-18 col-sm-9 col-md-6" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-16by9" href="#">
-                                            <img src="img/slika lista vesti.png" alt=""/>
-                                        </a>
-                                        <div class="news-item-detail"  data-category="#ff96ae">
-                                            <h6><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h6>
-                                            <p><span>1.1.2012</span>
-                                                <span>20:09</span>
-                                                <a href="#" class="category-color text-uppercase">Vesti</a></p>
-                                            <div class="number">
-                                                <p class="number-item category-bg">345</p>  
-                                            </div>
+                        <div class="col-lg-9 start-list-news-item">
+                            <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
 
-                                        </div>
-                                    </article>
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-3 left-94">345</p>  
+                                    </div>
                                 </div>
-                                <div class="col-xs-18 col-sm-9 col-md-6" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-16by9" href="#">
-                                            <img src="img/slika lista vesti(1).png" alt=""/>
-                                        </a>
-                                        <div class="news-item-detail">
-                                            <h6><a href="#">ÐURIĆ: Ne treba nam još oružja na buretu baruta!</a></h6>
-                                            <p><span>1.1.2012</span>
-                                                <span>20:09</span>
-                                                <a href="#" class="category-color text-uppercase">Vesti</a></p>
-                                            <div class="number">
-                                                <p class="number-item category-bg ">345</p>  
-                                            </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
 
-                                        </div>
-                                    </article>
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-14 left-94">345</p>  
+                                    </div>
                                 </div>
-                                <div class="col-xs-18 col-sm-9 col-md-6" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-16by9" href="#">
-                                            <img src="img/slika lista vesti(2).png" alt=""/>
-                                        </a>
-                                        <div class="news-item-detail">
-                                            <h6><a href="#">LUDNICA U MADRIDU River posle spektakularnog preokreta</a></h6>
-                                            <p><span>1.1.2012</span>
-                                                <span>20:09</span>
-                                                <a href="#" class="category-color text-uppercase">Vesti</a></p>
-                                            <div class="number">
-                                                <p class="number-item category-bg ">345</p>  
-                                            </div>
+                            </article>
+                            
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
 
-                                        </div>
-                                    </article>
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-25 left-94">345</p>  
+                                    </div>
                                 </div>
-                                <div class="col-xs-18 col-sm-9 col-md-6 four" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-16by9" href="#">
-                                            <img src="img/slika lista vesti(3).png" alt=""/>
-                                        </a>
-                                        <div class="news-item-detail">
-                                            <h6><a href="#">EKSKLUZIVNO Žarko Laušević napisao je i treću knjigu i to o…</a></h6>
-                                            <p><span>1.1.2012</span>
-                                                <span>20:09</span>
-                                                <a href="#" class="category-color text-uppercase">Vesti</a></p>
-                                            <div class="number">
-                                                <p class="number-item category-bg ">345</p>  
-                                            </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
 
-                                        </div>
-                                    </article>
-                                </div><div class="col-xs-18 col-sm-9 col-md-6 five" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-16by9" href="#">
-                                            <img src="img/slika lista vesti(4).png" alt=""/>
-                                        </a>
-                                        <div class="news-item-detail">
-                                            <h6><a href="#">Serija "Jutro će promeniti sve" napravila je BURU U SRBIJI</a></h6>
-                                            <p><span>1.1.2012</span>
-                                                <span>20:09</span>
-                                                <a href="#" class="category-color text-uppercase">Vesti</a></p>
-                                            <div class="number">
-                                                <p class="number-item category-bg ">345</p>  
-                                            </div>
-
-                                        </div>
-                                    </article>
-                                </div><div class="col-xs-18 col-sm-9 col-md-6 six" data-category="#ff96ae">
-                                    <article class="news-item">
-                                        <a class="img-holder size-1by1" href="#">
-                                            <img src="img/baner 300.png" alt=""/>
-                                        </a>
-                                    </article>
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-36 left-94">345</p>  
+                                    </div>
                                 </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
+
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-47 left-94">345</p>  
+                                    </div>
+                                </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
+
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-58 left-94">345</p>  
+                                    </div>
+                                </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
+
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-69 left-94">345</p>  
+                                    </div>
+                                </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
+
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-80 left-94">345</p>  
+                                    </div>
+                                </div>
+                            </article>
+                             <article class="list-news-item d-flex" data-category="#ff96ae">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/udarna_vest.jpg" alt=""/>
+                                </a>
+                                <div class="w-75 list-news-item-detail">
+                                    <h5><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h5>
+                                    <p class="description">Poslanik Demokratskog fronta Nebojša Medojević prebačen je pre pola sata u Urgentni centar Kliničkog…</p>
+                                    <p><span>1.1.2012</span>
+                                        <span>20:09</span>
+                                        <a href="#" class="category-color">Vesti</a></p>
+
+                                    <div class="number w-10 ">
+                                        <p class="number-item category-bg top-91 left-94">345</p>  
+                                    </div>
+                                </div>
+                            </article>
+                            <a href="#" class="next">Sledeca ></a>
+                            
+                        </div>
+                          <div class="col-lg-5 aside-elements">
+                        <!--Aside start-->
+                        <aside class="aside-elements">
+                                <article class="news-item">
+                                <a class="img-holder size-16by9" href="#">
+                                    <img src="img/slika lista vesti.png" alt=""/>
+                                </a>
+                            <div class="news-item-detail"  data-category="#ff96ae">
+                                <h6><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h6>
+                                <p><span>1.1.2012</span>
+                                    <span>20:09</span>
+                                    <a href="#" class="category-color text-uppercase">Vesti</a></p>
+                                <div class="number top-15">
+                                    <p class="number-item category-bg">345</p>  
+                                </div>
+
                             </div>
-                        </div>
+                            </article>
+
+                            <article class="banner1">
+                                <img class="img-holder size-4by3" src="img/Rectangle 41.png" alt=""/>
+                            </article>
+                            <article class="news-item">
+                                <a class="img-holder size-16by9" href="#">
+                                    <img src="img/slika lista vesti.png" alt=""/>
+                                </a>
+                            <div class="news-item-detail"  data-category="#ff96ae">
+                                <h6><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h6>
+                                <p><span>1.1.2012</span>
+                                    <span>20:09</span>
+                                    <a href="#" class="category-color text-uppercase">Vesti</a></p>
+                                <div class="number top-55">
+                                    <p class="number-item category-bg">345</p>  
+                                </div>
+
+                            </div>
+                            </article>
+                            <article class="news-item">
+                                <a class="img-holder size-16by9" href="#">
+                                    <img src="img/slika lista vesti.png" alt=""/>
+                                </a>
+                            <div class="news-item-detail"  data-category="#ff96ae">
+                                <h6><a href="#">DRAMA! Medojević opet prebačen u Urgentni centar u Podgorici</a></h6>
+                                <p><span>1.1.2012</span>
+                                    <span>20:09</span>
+                                    <a href="#" class="category-color text-uppercase">Vesti</a></p>
+                                <div class="number top-75">
+                                    <p class="number-item category-bg">345</p>  
+                                </div>
+
+                            </div>
+                            </article>
+                            <article>
+                                <img class="img-holder " src="img/Rectangle 41.png" alt=""/>
+                            </article>
+
+                        </aside>
+                        <!--Aside end-->
                     </div>
+                    </div>
+                  
                 </div>
+                
+                    
             </section>
-            <!--Exclusive section end-->
-
-            <!--News-comments  section start-->
-            <section class="news-comments">
-                <div class="container">
-                    <div class="title-line-news-comments">
-                    <h6 class="news-comments-title text-uppercase">Najnoviji komentari</h6>
-                    </div>
-                    <article class="news-comments-slider">
-                        <section class="lead-slider-wrapper">
-                            <ul class=" list-unstyled lead-slider-news-comments owl-carousel">
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                    <p class="strelica"></p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                                <li class="news-comments-item" data-category="#2fbf8f">
-                                    <p class="news-comments-item-commentator">Marko Markovic:</p>
-                                    <cite>
-                                        Mislim da su sve ovo prazne pretnje, ali ne sme se nista prepustiti slucaju kao što jeste. 
-                                    </cite>
-                                    <p class="news-comments-item-line"></p>
-                                    <a href="#" class="news-comments-item-title">
-                                        <p>Vesić upozorava: Đilas je poslao opasnu poruku!</p>
-                                    </a>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color text-uppercase">Vesti</a>
-                                    </p>
-                                </li>
-                            </ul>
-                        </section>
-                    </article>
-
-
-                </div>
-            </section>    
-
-            <!--News-comments section end-->
-
-            <!--Youtube section start--> 
-            <section class="youtube">
-                <div class="container">
-                    <div class="title-line-youtube">
-                    <h6 class="youtube-title text-uppercase">Youtube komentari</h6>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="youtube-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/youtube-item.jpg" alt=""/>
-                                </a>
-                                <div class="youtube-play">
-                                    <a href="" class="fa fa-play-circle"></a>
-                                </div>
-                                <div class="youtube-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="youtube-item-quote">
-                                    <p class="youtube-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="youtube-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="youtube-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/youtube-item.jpg" alt=""/>
-                                </a>
-                                <div class="youtube-play">
-                                    <a href="" class="fa fa-play-circle"></a>
-                                </div>
-                                <div class="youtube-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="youtube-item-quote">
-                                    <p class="youtube-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="youtube-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18  col-lg-6">
-                            <article class="youtube-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/youtube-item.jpg" alt=""/>
-                                </a>
-                                <div class="youtube-play">
-                                    <a href="" class="fa fa-play-circle"></a>
-                                </div>
-                                <div class="youtube-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="youtube-item-quote">
-                                    <p class="youtube-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="youtube-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <!--Youtube section end-->
-            <!--Banner section start-->
-            <section class="banner">
-                <div class="container">
-                    <a href="" class="">
-                        <img src="img/baner 90.png" alt=""/>
-                    </a>
-                </div>
-            </section>
-            <!--Banner section end-->
-            <!--Top news section start-->
-            <section class="top-news">
-                <div class="container">
-                    <div class="title-line-top-news">
-                    <h6 class="top-news-title text-uppercase">Vesti komentari</h6>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="top-news-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/top-news.jpg" alt=""/>
-                                </a>
-
-                                <div class="top-news-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="top-news-item-quote">
-                                    <p class="top-news-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="top-news-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="top-news-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/top-news.jpg" alt=""/>
-                                </a>
-
-                                <div class="top-news-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="top-news-item-quote">
-                                    <p class="top-news-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="top-news-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="top-news-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/top-news.jpg" alt=""/>
-                                </a>
-
-                                <div class="top-news-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="top-news-item-quote">
-                                    <p class="top-news-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="top-news-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!--Top news section end--> 
-
-            <!--Sport section start-->
-            <section class="sport-comments">
-                <div class="container">
-                    <div class="title-line-sport-comments">
-                    <h6 class="sport-comments-title text-uppercase">Sport komentari</h6>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="sport-comments-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/sport.jpg" alt=""/>
-                                </a>
-
-                                <div class="sport-comments-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="sport-comments-item-quote">
-                                    <p class="sport-comments-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="sport-comments-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="sport-comments-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/sport.jpg" alt=""/>
-                                </a>
-
-                                <div class="sport-comments-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="sport-comments-item-quote">
-                                    <p class="sport-comments-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="sport-comments-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="col-sm-18 col-lg-6">
-                            <article class="sport-comments-item" data-category="#dfbded">
-                                <a class="img-holder size-1">
-                                    <img src="img/sport.jpg" alt=""/>
-                                </a>
-
-                                <div class="sport-comments-item-detail">
-                                    <h2><a href="#">KAKO ONDA DA GA SHVATITE OZBILJNO? Karić s dve trbušne plesačice pričao o…</a></h2>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                        <a href="#" class="category-color">SPORT</a></p>
-                                </div>
-                                <div class="sport-comments-item-quote">
-                                    <p class="sport-comments-comentator"><a href="#">Beti Vesic:</a></p>
-                                    <p class="sport-comments-comentator-quote">”Dokrajčiće njemu njegovo bogatsvo ona bulumenta dece, unuka, praunuka, svi sa lažnim...”</p>
-                                    <p><span>1.1.2012</span>
-                                        <span>20:09</span>
-                                    <div class="number">
-                                        <p class="number-item category-bg ">345</p>  
-                                    </div>
-
-                                </div>
-
-                            </article>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!--Sport section end-->
+            <!--Section News list end-->
 
         </main>
         <!--Main end-->
@@ -1098,21 +816,21 @@ and open the template in the editor.
                                 <a class="fa fa-google-plus" href="https://plus.google.com/discover" target="blank"></a>
                             </li>
                         </ul>
-                     </div>
-                 
+                    </div>
+
                 </div>
             </section>
             <section class="middle-footer">
                 <div class="container">
-                      <div class="footer-middle d-flex ">
+                    <div class="footer-middle d-flex ">
                         <ul class="list-unstyled">
                             <li>
                                 <a href="#">Marketing</a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">Impressum</a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">Pravila i uslovi koriscenja</a>
                             </li>
                         </ul>

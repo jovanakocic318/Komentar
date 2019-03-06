@@ -72,7 +72,33 @@ header{
             position: relative;
             top: -2px;
             .search-wrapper{
-                z-index: 1
+                z-index: 1;
+                .search-form{
+                    .form-group{
+                        padding: 1rem;
+                        background: #fff;
+                        .input-group{
+                            .form-control{
+                                border-color: $green;
+                            }
+                            .input-group-append{
+                                button{
+                                    border-color: $green;
+                                    &:hover{
+                                        background: $green;
+                                        color: #FFF;
+                                    }
+                                    span{
+                                       
+                                        &:hover{
+                                            color: #FFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .navbar-brand{
                 display:block;

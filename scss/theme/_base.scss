@@ -51,6 +51,11 @@ body{
             padding-top: 56.25%;
         }
     }
+    &.size-1{
+        &:after{
+            padding-top: 60%;
+        }
+    }
     
     img{
         display: block;

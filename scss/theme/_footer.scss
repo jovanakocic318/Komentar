@@ -1,2 +1,116 @@
+footer{
+    background: #272727;
+    color: $beige;
+    font-family: $font-roboto;
+    font-weight: $font-weight-normal;
+    .footer-top{
+        .navbar{
+            .navbar-nav{
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                column-gap:30px;
+                margin-bottom: 30px;
+                display: block;
+                margin-left:auto;
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+                .nav-item{
+                    a{
+                        font-size: 15px;
+                        span{
+                            color: $beige;
+                        }
+                    }
 
+                }
+            }
+
+        }
+        .footer-icons{
+            margin-bottom: 2rem;
+            ul{
+                margin:auto;
+                font-size: 25px;
+                li{
+                    padding: 1rem;
+                    a{
+                        color: $beige;
+                    }
+                }
+            }
+        }
+    }
+    .middle-footer{
+        border-top: 2px solid $beige;
+        .footer-middle{
+
+            ul{
+                margin:auto;
+                display: block;
+                text-align: center;
+                li{
+                    padding: 1rem;
+
+                    a{
+                        color: $beige;
+                    }
+                }
+            }            
+        }
+    }
+    .footer-bottom{
+        border-top: 2px solid $beige;
+        p{
+            text-align: center;
+            color: $beige;
+            padding: 1rem;
+            font-size: $small-font-size;
+        }
+    }
+
+}
+
+
+
+@media(min-width:450px){
+    footer{
+        .footer-top{
+            .navbar{
+                .navbar-nav{
+                    -webkit-column-count: 3;
+                    -moz-column-count: 3;
+                    column-count: 3;
+                    column-gap:30px;
+                }
+                .nav-item{
+                    font-size:18px;
+
+                }
+            }
+        }
+        .middle-footer{
+            .footer-middle{
+                ul{
+                    display: flex;
+                } 
+            }
+        }
+
+    }
+}
+
+
+@media(min-width: 900px){
+    footer{
+        .footer-top{
+            .navbar{
+                .navbar-nav{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
 

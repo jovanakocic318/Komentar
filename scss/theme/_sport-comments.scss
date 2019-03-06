@@ -1,0 +1,133 @@
+.sport-comments{
+
+    .container{
+        .title-line-sport-comments{
+            &:before {
+                content:'';
+                width:87%;
+                height:3px;
+                background:linear-gradient(to right, $dark-green, $gray-100);
+                position: absolute;
+
+            }
+            .sport-comments-title{
+                padding:11px;
+                background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
+                color: $gray-900;
+                font-family: $font-roboto;
+                font-weight: $font-weight-medium;  
+            }
+        }
+    }
+
+    .row{
+        .col-sm-18,.col-lg-6{
+            .sport-comments-item{
+                margin-bottom:1rem;
+                .sport-comments-item-detail{
+                    width:92%;
+                    background: linear-gradient(to top, rgba(0,0,0,0.5) , rgba(0,0,0,0.1));
+                    h2{
+                        a{
+                            font-size: 16px;
+                            color: $white;
+                            font-weight: $font-weight-normal;
+                            overflow: hidden;
+                            max-height: 3.4rem;
+                            line-height: 1.7rem;
+                            display: block;
+                            word-wrap: break-word;
+                            padding-left:15px;
+                            padding-right: 15px;
+                        }
+                    }
+                    p{
+                        padding-left:15px;
+                        padding-right: 15px;
+                    }
+                    color: $gray-200;
+                    position:absolute;
+                    bottom: 10.3rem;
+                    left: 1rem;
+                }
+                .sport-comments-item-quote{
+                    background: $beige;
+                    padding:10px;
+                    padding-bottom: 5px;
+                    .sport-comments-comentator{
+                        a{
+                            color: #8D8B8B;
+                        }
+
+                    }
+                    .sport-comments-comentator-quote{
+                        color: $gray-800;
+                        font-size: 15px;
+                    }
+                    .number{
+                        .number-item{
+                            position: absolute;
+                            height: 20px;
+                            width: 30px;
+                            top: 75%;
+                            color: $white;
+                            font-weight: $font-weight-medium;
+                            font-size: $small-font-size;
+                            right: 4px;
+                            z-index: 3;
+                            text-align: center;
+                            padding-top: 5px;
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                width: 6px;
+                                height: 8px;
+                                left: 20px;
+                                bottom:-8px;
+                                border-width: 3px;
+                                border-style: solid;
+                                border-color: transparent;
+                                border-top-color: $gray-500;
+                                border-left-color: $gray-500;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 576px){
+    .sport-comments-item{
+        .sport-comments-item-detail{
+            width:95% !important;
+            bottom: 9.5rem !important;
+        }
+    }
+}
+@media(min-width: 768px){
+    .sport-comments-item{
+        .sport-comments-item-detail{
+            width:96% !important;
+            bottom: 8.7rem !important;
+        }
+    }
+}
+@media(min-width: 992px){
+    .sport-comments-item{
+        .sport-comments-item-detail{
+            width:91% !important;
+            bottom: 10.3rem !important;
+        }
+    }
+}
+@media(min-width: 1200px){
+    .sport-comments-item{
+        .sport-comments-item-detail{
+            width:93% !important;
+            bottom: 9.3rem !important;
+        }
+    }
+}

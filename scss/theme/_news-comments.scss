@@ -1,0 +1,89 @@
+$dark-green: #0BAE92;
+$beige: #FFF;
+.news-comments{
+    .container{
+        .title-line-news-comments{
+            .news-comments-title{
+            padding:11px;
+            background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
+            color: $gray-900;
+            font-family: $font-roboto;
+            font-weight: $font-weight-medium;
+           }
+           &:before {
+                content:'';
+                width:87%;
+                height:3px;
+                background:linear-gradient(to right, $dark-green, $gray-100);
+                position: absolute;
+                
+                
+            }
+        }
+        
+        .news-comments-slider{
+            .lead-slider-wrapper{
+                .lead-slider-news-comments{
+                    .owl-item{
+                        margin-right: 20px;
+                        width: 273px !important;
+                        &:nth-of-type(4){
+                            margin-right: 0px;
+                        }
+                    }
+                    .owl-dot{
+                        
+                        font-size: 10px;
+                        span{
+                           background: #BABABA;
+                           
+                        }
+                        &:hover span, &.active span {
+                            background:  $green;
+                        } 
+                        
+                    }
+                    .news-comments-item{
+                        background: $beige;
+                        padding: 15px 33px 10px 33px;
+                         
+                        .news-comments-item-commentator{
+                            color: $gray-900;
+                        }
+                        cite{
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-family: $font-roboto;
+                            font-weight: $font-weight-medium;
+                            color: $gray-900;
+                            
+                        }
+                        .news-comments-item-line{
+                          height: 0.1px;
+                          width: 203px;
+                          border: 1.5px solid #E4E2;
+                          margin-top: 10px;
+                        }
+                        .news-comments-item-title{
+                            p{
+                            margin-top: 10px;
+                            color: $gray-700;
+                            }
+                        }
+                        .strelica{
+                            content:'';
+                            position:absolute;
+                            width: 20px;
+                            height: 20px;
+                            border: 10px solid transparent;
+                            border-top: 10px solid $beige;
+                            bottom: -2px;
+                        }
+                       
+                    }
+                }
+            }
+        }
+
+    }
+}
