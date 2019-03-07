@@ -20,6 +20,10 @@ footer{
                         font-size: 15px;
                         span{
                             color: $beige;
+                            &:hover{
+                                font-size: 18px;
+                                color: $green;
+                            }
                         }
                     }
 
@@ -36,6 +40,13 @@ footer{
                     padding: 1rem;
                     a{
                         color: $beige;
+                        &:hover{
+                            font-size: 18px;
+                            color: $green;
+                        }                            &:hover{
+                            font-size: 18px;
+                            color: $green;
+                        }
                     }
                 }
             }
@@ -54,6 +65,10 @@ footer{
 
                     a{
                         color: $beige;
+                        &:hover{
+                            font-size: 18px;
+                            color: $green;
+                        }
                     }
                 }
             }            

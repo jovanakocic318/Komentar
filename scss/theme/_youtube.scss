@@ -37,6 +37,9 @@ $dark-red: #E0311F;
                     a{
                         color: $white;
                         font-size: 4rem;
+                        &:hover{
+                            color: $gray-300;
+                        }
 
                     }
                 }

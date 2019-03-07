@@ -15,7 +15,11 @@
                 background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
                 color: $gray-900;
                 font-family: $font-roboto;
-                font-weight: $font-weight-medium;  
+                font-weight: $font-weight-medium;  &:before {
+
+
+                }
+
             }
         }
     }

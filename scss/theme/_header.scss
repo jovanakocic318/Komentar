@@ -46,6 +46,10 @@ header{
                         margin-right: 10px;
                         a{
                             color: $header-link-color;
+                            &:hover{
+                                color: $green;
+                                
+                            }
                         }
                     }
 
@@ -57,6 +61,9 @@ header{
                         border: 1px solid #8AB957;
                         border-radius: $border-radius;
                         padding: 5px 6px 4px 6px;
+                        &:hover{
+                            border: 1px solid #8AB957;
+                        }
                     } 
                 }
             }
@@ -72,27 +79,37 @@ header{
             position: relative;
             top: -2px;
             .search-wrapper{
-                z-index: 1;
+               
                 font-size: 1rem;
                 margin-right: 1rem;
                 color: #979797;
                 .search-icon{
-                    font-size: 1.5rem
+                    font-size: 1.5rem;
+                        &:hover{
+                        color: $green;
+                        
+                        
+                    }
                 }
                 .search-form{
+                    z-index:10;
                     .form-group{
                         padding: 1rem;
                         background: #fff;
                         .input-group{
                             .form-control{
-                                border-color: $green;
+                                border-color: 1 px solid $gray-800;
+                                &:focus{
+                                    box-shadow: 0 0 0 0.2rem rgba(158, 244, 112, 0.8);
+                                }
                             }
                             .input-group-append{
                                 button{
                                     border-color: $green;
                                     &:hover{
-                                        background: $green;
-                                        color: #FFF;
+                                        background: #fff;
+                                        color: #9ef470;
+                                        
                                     }
                                     span{
 

@@ -46,7 +46,22 @@ $beige: #FFF;
                     .news-comments-item{
                         background: $beige;
                         padding: 15px 33px 10px 33px;
-                         
+                        &:before{
+                            content:"\201D";
+                            font-size: 49px;
+                            position: absolute;
+                            top: 56px;
+                            left: 10px;
+                            color: $green;
+                        }
+                        &:after{
+                             content:'\201C';
+                             font-size: 49px;
+                            position: absolute;
+                            bottom: 88px;
+                            right: 10px;
+                            color: $green;
+                        }
                         .news-comments-item-commentator{
                             color: $gray-900;
                         }

@@ -22,9 +22,7 @@ $dark-gray: $gray-900;
             padding-right: 10px;
             .col-xs-18:first-of-type{
                 order: 3;
-                padding-right: 0px !important;
-                padding-left: 0px;
-                background: $gray-100;
+               background: $gray-100;
 
 
                 .bot
@@ -170,6 +168,7 @@ $dark-gray: $gray-900;
                 
                 .news-tab{
                     .nav-item{
+                        background: #FFF;
                         .nav-link{
                             border-top-left-radius: 0rem;
                             border-top-right-radius: 0rem;
@@ -211,6 +210,9 @@ $dark-gray: $gray-900;
                                 word-wrap: break-word;
                                 a{
                                     color: #000;
+                                    &:hover{
+                                                color: $gray-700;
+                                            }
                                 }
 
                             }
@@ -231,10 +233,11 @@ $dark-gray: $gray-900;
                                 color: $white;
                                 font-weight: $font-weight-medium;
                                 font-size: $small-font-size;
-                                right: 8%;
+                                
                                 z-index: 3;
                                 text-align: center;
                                 padding-top: 5px;
+                                right:17px;
                                 &:after{
                                     content: '';
                                     position: absolute;
@@ -271,8 +274,7 @@ $dark-gray: $gray-900;
             .row{
                 .col-sm-9{
                     order: 3;
-                    padding-right: 0px !important;
-                    padding-left: 0px;
+                   
                     .bot
                     
                     {   
@@ -413,9 +415,10 @@ $dark-gray: $gray-900;
                 }
                 .col-sm-9{
                     order: 2;
-                    background: #FFF;
+                    background: $gray-100;
                     .news-tab{
                         .nav-item{
+                            background: #FFF;
                             .nav-link{
                                 border-top-left-radius: 0rem;
                                 border-top-right-radius: 0rem;
@@ -470,10 +473,11 @@ $dark-gray: $gray-900;
                                     color: $white;
                                     font-weight: $font-weight-medium;
                                     font-size: $small-font-size;
-                                    right: 8%;
+                                   
                                     z-index: 3;
                                     text-align: center;
                                     padding-top: 5px;
+                                    right: 17px;
                                     &:after{
                                         content: '';
                                         position: absolute;
@@ -536,8 +540,7 @@ $dark-gray: $gray-900;
             .row{
                 .col-lg-4{
                     order: 1;
-                    padding-right: 0px !important;
-                    padding-left: 0px;
+                    
 
                     .bot{
                         background: #FFF;
@@ -672,9 +675,10 @@ $dark-gray: $gray-900;
                 }
                 .col-lg-5{
                     order: 3;
-                    background: #FFF;
+                    background: $gray-100;
                     .news-tab{
                         .nav-item{
+                            background: #FFF;
                             .nav-link{
                                 border-top-left-radius: 0rem;
                                 border-top-right-radius: 0rem;
@@ -729,10 +733,11 @@ $dark-gray: $gray-900;
                                     color: $white;
                                     font-weight: $font-weight-medium;
                                     font-size: $small-font-size;
-                                    right: 8%;
+                                   
                                     z-index: 3;
                                     text-align: center;
                                     padding-top: 5px;
+                                    right: 17px;
                                     &:after{
                                         content: '';
                                         position: absolute;

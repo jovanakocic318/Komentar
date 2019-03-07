@@ -40,11 +40,16 @@ $gray-850: #8D8B8B;
                         .exclusive-item-detail{
                             padding-left: 12px;
                             padding-right: 12px;
+                            
                             h6{
                                 font-family: $font-roboto;
                                 font-weight: $font-weight-normal;
                                 a{
                                     color: $black;  
+                                    &:hover{
+                                                color: $gray-900;
+                                                font-weight: $font-weight-medium;
+                                            }
                                 }
                             }
                             p{
@@ -52,6 +57,7 @@ $gray-850: #8D8B8B;
                             }
                         }
                         ul{
+                           
                             .numbers-of-comment{
                                 display: inline;
                                 margin-left:6px;
@@ -106,6 +112,9 @@ $gray-850: #8D8B8B;
                                         display: block;
                                         word-wrap: break-word;
                                         color: $black;
+                                        &:hover{
+                                                color: $gray-700;
+                                            }
 
                                     }
                                 }
