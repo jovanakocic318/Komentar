@@ -2,33 +2,36 @@
     margin-bottom: 2rem;
     .container{
         .title-line-top-news{
-             &:before {
+            position: relative;
+            &:before {
                 content:'';
-                width:87%;
+                width:100%;
+                background:linear-gradient(to right, #0BAE92 10%, $gray-100);
                 height:3px;
-                background:linear-gradient(to right, $green, $gray-100);
+                left: 0;
                 position: absolute;
-                
-               
             }
-           .top-news-title{
-            padding:11px;
-            background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
-            color: $gray-900;
-            font-family: $font-roboto;
-            font-weight: $font-weight-medium;
-           
-        }  
+            .top-news-title{
+                padding:11px;
+                background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
+                color: $gray-900;
+                font-family: $font-roboto;
+                font-weight: $font-weight-medium;
+
+            }  
         }
-       
+
     }
     .row{
         .col-sm-18,.col-lg-6{
             .top-news-item{
                 margin-bottom:0.8rem;
                 .top-news-item-detail{
-                       background: linear-gradient(to top, rgba(0,0,0,0.5) , rgba(0,0,0,0.1));
+                    background: linear-gradient(to top, rgba(0,0,0,0.5) , rgba(0,0,0,0.1));
                     width:92%;
+                    &:hover{
+                        background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+                    }
                     h2{
                         a{
                             font-size: 16px;
@@ -59,12 +62,20 @@
                     .top-news-comentator{
                         a{
                             color: #8D8B8B;
+                            &:hover{
+                                color: $gray-900;
+                            }
                         }
-                        
+
                     }
                     .top-news-comentator-quote{
+                        padding-right: 1rem;
                         color: $gray-800;
                         font-size: 15px;
+                        line-height: 1.5rem;
+                        max-height: 3.2rem;
+                        overflow: hidden;
+                        font-style: italic;
                     }
                     .number{
                         .number-item{
@@ -101,34 +112,78 @@
     }
 }
 @media(min-width: 576px){
-    .top-news-item{
-        .top-news-item-detail{
-            width:95% !important;
-            bottom: 9.5rem !important;
+      .top-news{
+        .row{
+            .col-lg-6{
+                .top-news-item{
+                    .top-news-item-detail{
+                        width:95% ;
+                        bottom: 9.9rem ;
+                    }
+                  
+                }
+            }
         }
     }
 }
 @media(min-width: 768px){
-    .top-news-item{
-        .top-news-item-detail{
-            width:96% !important;
-            bottom: 8.7rem !important;
+
+    .top-news{
+        .row{
+            .col-sm-18{
+                .top-news-item{
+                    .top-news-item-detail{
+                        width:96% ;
+                        bottom:8.5rem ;
+                    }
+                    .top-news-item-quote {
+                        .number{
+                            .number-item{
+                                top:85% ;
+                            }
+                        }
+                    }  
+                }
+
+            }
         }
     }
 }
+
 @media(min-width: 992px){
-    .top-news-item{
-        .top-news-item-detail{
-            width:91% !important;
-            bottom: 10.3rem !important;
+    .top-news{
+        .row{
+            .col-lg-6{
+                .top-news-item{
+                    .top-news-item-detail{
+                        width:91% ;
+                        bottom: 10rem ;
+                    }
+                    .top-news-item-quote{
+                        .number{
+                            .number-item{
+                                top: 65%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 @media(min-width: 1200px){
-    .top-news-item{
-        .top-news-item-detail{
-            width:93% !important;
-            bottom: 9.3rem !important;
+     .top-news{
+        .row{
+            .col-lg-6{
+                .top-news-item{
+                    .top-news-item-detail{
+                        width:93% ;
+                        bottom: 9.8rem ;
+                    }
+                 
+                }
+            }
         }
     }
 }

@@ -5,14 +5,14 @@ $dark-red: #E0311F;
     margin-bottom: 2rem;
     .container{
         .title-line-youtube{
+            position: relative;
             &:before {
                 content:'';
-                width:87%;
+                width:100%;
+                background:linear-gradient(to right, #E0311F 10%, $gray-100);
                 height:3px;
-                background:linear-gradient(to right, $dark-red, $gray-100);
+                left: 0;
                 position: absolute;
-
-
             }
             .youtube-title{
                 padding:11px;
@@ -35,17 +35,20 @@ $dark-red: #E0311F;
                     left: 45%;
 
                     a{
-                        color: $white;
+                        color: $gray-200;
                         font-size: 4rem;
                         &:hover{
-                            color: $gray-300;
+                            color: $gray-100;
                         }
 
                     }
                 }
                 .youtube-item-detail{
                     background: linear-gradient(to top, rgba(0,0,0,0.5) , rgba(0,0,0,0.1));
-                    width:92%;
+                    width:91%;
+                    &:hover{
+                        background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+                    }
                     h2{
                         a{
                             font-size: 16px;
@@ -66,7 +69,7 @@ $dark-red: #E0311F;
                     }
                     color: $gray-200;
                     position:absolute;
-                    bottom: 10.3rem;
+                    bottom: 10.5rem;
                     left: 1rem;
                 }
                 .youtube-item-quote{
@@ -76,12 +79,22 @@ $dark-red: #E0311F;
                     .youtube-comentator{
                         a{
                             color: #8D8B8B;
+                            &:hover{
+                                color: $gray-900;
+                            }
                         }
 
                     }
                     .youtube-comentator-quote{
+                        padding-right: 1rem;
                         color: $gray-800;
                         font-size: 15px;
+                        line-height: 1.5rem;
+                        max-height: 3.2rem;
+                        overflow: hidden;
+                        font-style: italic;
+
+
                     }
                     .number{
                         .number-item{
@@ -118,34 +131,78 @@ $dark-red: #E0311F;
     }
 }
 @media(min-width: 576px){
-    .youtube-item{
-        .youtube-item-detail{
-            width:95% !important;
-            bottom: 9.5rem !important;
+    .youtube{
+        .row{
+            .col-lg-6{
+                .youtube-item{
+                    .youtube-item-detail{
+                        width:95% ;
+                        bottom: 10.5rem ;
+                    }
+
+                }
+            }
         }
     }
 }
 @media(min-width: 768px){
-    .youtube-item{
-        .youtube-item-detail{
-            width:96% !important;
-            bottom: 8.7rem !important;
+
+    .youtube{
+        .row{
+            .col-sm-18{
+                .youtube-item{
+                    .youtube-item-detail{
+                        width:96% ;
+                        bottom: 9.2rem ;
+                    }
+                    .youtube-item-quote {
+                        .number{
+                            .number-item{
+                                top:85% ;
+                            }
+                        }
+                    }  
+                }
+
+            }
         }
     }
 }
+
 @media(min-width: 992px){
-    .youtube-item{
-        .youtube-item-detail{
-            width:91% !important;
-            bottom: 10.3rem !important;
+    .youtube{
+        .row{
+            .col-lg-6{
+                .youtube-item{
+                    .youtube-item-detail{
+                        width:91% ;
+                        bottom: 10.5rem ;
+                    }
+                    .youtube-item-quote{
+                        .number{
+                            .number-item{
+                                top: 65%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 @media(min-width: 1200px){
-    .youtube-item{
-        .youtube-item-detail{
-            width:93% !important;
-            bottom: 9.3rem !important;
+    .youtube{
+        .row{
+            .col-lg-6{
+                .youtube-item{
+                    .youtube-item-detail{
+                        width:93% ;
+                        bottom: 10.5rem ;
+                    }
+
+                }
+            }
         }
     }
 }

@@ -22,19 +22,19 @@ $dark-gray: $gray-900;
             padding-right: 10px;
             .col-xs-18:first-of-type{
                 order: 3;
-               background: $gray-100;
+                background: $gray-100;
 
 
                 .bot
-                {
-                    background: #FFF;
-                    &:first-child:before {
+                {   background: #FFF;
+                    position: relative;
+                    &:before {
                         content:'';
                         width:100%;
+                        background:linear-gradient(to right, $green 10%, transparent);
                         height:3px;
-                        background:linear-gradient(to right, $green, transparent);
-                        top:-3px;
-                        position: absolute
+                        left: 0;
+                        position: absolute;
                     }
                     .bot-title{
                         background:linear-gradient(to right, $white, #F3F3F3);
@@ -82,6 +82,7 @@ $dark-gray: $gray-900;
                             .news-item{
                                 .news-item-detail{
                                     background: linear-gradient(to top, rgba(0,0,0,0.5) , rgba(0,0,0,0.1));
+
                                     h2{
                                         a{
                                             font-size: 1.4rem;
@@ -165,7 +166,7 @@ $dark-gray: $gray-900;
             .col-xs-18{
                 order: 2;
                 background: $gray-100;
-                
+
                 .news-tab{
                     .nav-item{
                         background: #FFF;
@@ -197,10 +198,11 @@ $dark-gray: $gray-900;
                     ul{
                         li{
                             background: #fff;
+
                         }
                         .news-item-detail{
                             margin-left:10px;
-
+                            padding-right:20px;
                             h6{
                                 font-size: 1rem;
                                 overflow: hidden;
@@ -211,8 +213,8 @@ $dark-gray: $gray-900;
                                 a{
                                     color: #000;
                                     &:hover{
-                                                color: $gray-700;
-                                            }
+                                        color: $gray-700;
+                                    }
                                 }
 
                             }
@@ -233,7 +235,7 @@ $dark-gray: $gray-900;
                                 color: $white;
                                 font-weight: $font-weight-medium;
                                 font-size: $small-font-size;
-                                
+
                                 z-index: 3;
                                 text-align: center;
                                 padding-top: 5px;
@@ -274,18 +276,19 @@ $dark-gray: $gray-900;
             .row{
                 .col-sm-9{
                     order: 3;
-                   
+
                     .bot
-                    
+
                     {   
                         background: #FFF;
-                        &:first-child:before {
+                        position: relative;
+                        &:before {
                             content:'';
                             width:100%;
+                            background:linear-gradient(to right, $green 10%, $gray-100);
                             height:3px;
-                            background:linear-gradient(to right, $green, transparent);
-                            top:-3px;
-                            position: absolute
+                            left: 0;
+                            position: absolute;
                         }
                         .bot-title{
                             background:linear-gradient(to right, $white, #F3F3F3);
@@ -349,6 +352,7 @@ $dark-gray: $gray-900;
                                         color: $gray-200;
                                         position:absolute;
                                         bottom: 0;
+
 
                                     }
                                     .number{
@@ -446,61 +450,67 @@ $dark-gray: $gray-900;
                     .tab-pane{
                         ul{
                             .news-item-detail{
-                                margin-left:10px;
-                                h6{
-                                    font-size: 1rem;
-                                    overflow: hidden;
-                                    max-height: 3.9rem;
-                                    line-height: 1.3rem;
-                                    display: block;
-                                    word-wrap: break-word;
+                                padding-right:  33px ;
+                                li{
+                                    padding-top: 4px;
+                                    h6{
+                                        font-size: 1rem;
+                                        overflow: hidden;
+                                        max-height: 3.9rem;
+                                        line-height: 1.3rem;
+                                        display: block;
+                                        word-wrap: break-word;
 
-                                }
-                                p{
-                                    font-size: 0.8rem;
-                                }
-
-                            }
-                            .number{
-                                position: absolute;
-                                right: -8px;
-
-                                .number-item{
-                                    position: absolute;
-                                    height: 20px;
-                                    width: 30px;
-                                    top: 14%;
-                                    color: $white;
-                                    font-weight: $font-weight-medium;
-                                    font-size: $small-font-size;
-                                   
-                                    z-index: 3;
-                                    text-align: center;
-                                    padding-top: 5px;
-                                    right: 17px;
-                                    &:after{
-                                        content: '';
-                                        position: absolute;
-                                        left: 24.5px;
-                                        top: 20px;
-                                        bottom:-8px;
-                                        border-width: 3px;
-                                        border-style: solid;
-                                        border-color: transparent;
-                                        border-top-color: $gray-500;
-                                        border-left-color: $gray-500;
+                                    }
+                                    p{
+                                        font-size: 0.8rem;
                                     }
 
+                                }
+                                .number{
+                                    position: absolute;
+                                    right: -8px;
 
+                                    .number-item{
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 30px;
+                                        top: 14%;
+                                        color: $white;
+                                        font-weight: $font-weight-medium;
+                                        font-size: $small-font-size;
+
+                                        z-index: 3;
+                                        text-align: center;
+                                        padding-top: 5px;
+                                        right: 17px;
+                                        &:after{
+                                            content: '';
+                                            position: absolute;
+                                            left: 24.5px;
+                                            top: 20px;
+                                            bottom:-8px;
+                                            border-width: 3px;
+                                            border-style: solid;
+                                            border-color: transparent;
+                                            border-top-color: $gray-500;
+                                            border-left-color: $gray-500;
+                                        }
+
+
+                                    }
                                 }
                             }
                         }
+
                     }
+
                 }
             }
         }
     }
 }
+
 
 
 
@@ -510,7 +520,17 @@ $dark-gray: $gray-900;
         margin-bottom:2rem;
         .container{
             .row{
-                .col
+                .col-bot{
+                    .bot{
+                        .bot-item{
+                            ul{
+                                height: 365px;   
+                            }
+
+                        }
+                    }  
+                }
+
                 .col-sm-18{
                     .news-slider{
                         .lead-slider-wrapper{
@@ -528,10 +548,20 @@ $dark-gray: $gray-900;
                         }
                     }
                 }
+                .tab-content{
+                    .tab-pane{
+                        ul{
+                            li{
+                                padding-top: 4px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 
 @media (min-width:992px){
@@ -540,17 +570,18 @@ $dark-gray: $gray-900;
             .row{
                 .col-lg-4{
                     order: 1;
-                    
+
 
                     .bot{
                         background: #FFF;
-                        &:first-child:before {
+                        position: relative;
+                        &:before {
                             content:'';
                             width:100%;
+                            background:linear-gradient(to right, $green 10%, $gray-100);
                             height:3px;
-                            background:linear-gradient(to right, $green, transparent);
-                            top:-3px;
-                            position: absolute
+                            left: 0;
+                            position: absolute;
                         }
                         .bot-title{
                             background:linear-gradient(to right, $white, #F3F3F3);
@@ -705,60 +736,64 @@ $dark-gray: $gray-900;
                 .tab-content{
                     .tab-pane{
                         ul{
-                            .news-item-detail{
-                                margin-left: 10px;
-                                h6{
-                                    font-size: 1rem;
-                                    overflow: hidden;
-                                    max-height: 3.9rem;
-                                    line-height: 1.3rem;
-                                    display: block;
-                                    word-wrap: break-word;
+                            li{
+                                .news-item-detail{
+                                    padding-right: 33px;
+                                    h6{
+                                        font-size: 1rem;
+                                        overflow: hidden;
+                                        max-height: 3.9rem;
+                                        line-height: 1.3rem;
+                                        display: block;
+                                        word-wrap: break-word;
 
-                                }
-                                p{
-                                    font-size: 0.8rem;
-                                }
-
-                            }
-                            .number{
-                                position: absolute;
-                                right: -8px;
-
-                                .number-item{
-                                    position: absolute;
-                                    height: 20px;
-                                    width: 30px;
-                                    top: 14%;
-                                    color: $white;
-                                    font-weight: $font-weight-medium;
-                                    font-size: $small-font-size;
-                                   
-                                    z-index: 3;
-                                    text-align: center;
-                                    padding-top: 5px;
-                                    right: 17px;
-                                    &:after{
-                                        content: '';
-                                        position: absolute;
-                                        left: 24.5px;
-                                        top: 20px;
-                                        bottom:-8px;
-                                        border-width: 3px;
-                                        border-style: solid;
-                                        border-color: transparent;
-                                        border-top-color: $gray-500;
-                                        border-left-color: $gray-500;
+                                    }
+                                    p{
+                                        font-size: 0.8rem;
                                     }
 
-
                                 }
-                            }
+                                .number{
+                                    position: absolute;
+                                    right: -8px;
+
+                                    .number-item{
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 30px;
+                                        top: 14%;
+                                        color: $white;
+                                        font-weight: $font-weight-medium;
+                                        font-size: $small-font-size;
+
+                                        z-index: 3;
+                                        text-align: center;
+                                        padding-top: 5px;
+                                        right: 17px;
+                                        &:after{
+                                            content: '';
+                                            position: absolute;
+                                            left: 24.5px;
+                                            top: 20px;
+                                            bottom:-8px;
+                                            border-width: 3px;
+                                            border-style: solid;
+                                            border-color: transparent;
+                                            border-top-color: $gray-500;
+                                            border-left-color: $gray-500;
+                                        }
+
+
+                                    }
+                                }
+                            } 
                         }
+
                     }
                 }
             }
         }
     }
 }
+
 

@@ -45,10 +45,12 @@ header{
                         display: inline-block;
                         margin-right: 10px;
                         a{
-                            color: $header-link-color;
+                            color: $gray-500;
+                            height: 15px;
+                            width: 18px;
                             &:hover{
                                 color: $green;
-                                
+
                             }
                         }
                     }
@@ -57,12 +59,13 @@ header{
                 .login{
                     margin-bottom: 12px;
                     a{
-                        color: $header-link-color;
+                        color: $gray-500;
                         border: 1px solid #8AB957;
                         border-radius: $border-radius;
                         padding: 5px 6px 4px 6px;
                         &:hover{
                             border: 1px solid #8AB957;
+                            color:$green;
                         }
                     } 
                 }
@@ -79,16 +82,16 @@ header{
             position: relative;
             top: -2px;
             .search-wrapper{
-               
+
                 font-size: 1rem;
                 margin-right: 1rem;
                 color: #979797;
                 .search-icon{
                     font-size: 1.5rem;
-                        &:hover{
+                    &:hover{
                         color: $green;
-                        
-                        
+
+
                     }
                 }
                 .search-form{
@@ -98,18 +101,18 @@ header{
                         background: #fff;
                         .input-group{
                             .form-control{
-                                border-color: 1 px solid $gray-800;
+                                border-color: 1 px solid $gray-500;
                                 &:focus{
-                                    box-shadow: 0 0 0 0.2rem rgba(158, 244, 112, 0.8);
+                                    border-color: 1px solid $gray-900;
                                 }
                             }
                             .input-group-append{
                                 button{
-                                    border-color: $green;
+                                    border-color: $gray-500;
                                     &:hover{
-                                        background: #fff;
-                                        color: #9ef470;
-                                        
+                                        background: $gray-700;
+                                        color: #fff;
+
                                     }
                                     span{
 
@@ -124,10 +127,19 @@ header{
                 }
             }
             .navbar-toggler{
-                border-color: $green;
-                .navbar-toggler-icon{
-                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+                border: 1px solid #979797;
+                &:hover{
+                    border:2px solid $green;
+                    .navbar-toggler-icon{
+                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.4)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
                 }
+                }
+                .navbar-toggler-icon{
+                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+                }
+
             }
 
 
@@ -157,10 +169,9 @@ header{
                         span{
                             border-top: 2px solid transparent;
                             border-color: transparent;
-                            padding-left: 15px;
-                            padding-right: 15px;
-                            padding-top: 8px;
-                            padding-bottom: 15px;
+                            
+                            padding: 1rem;
+                            
                         }
                         &:hover span, &.active span{
                             border-color: inherit;
@@ -221,6 +232,12 @@ header{
                     .nav-item{
                         .nav-link{
                             font-size: 1rem ;
+                            span{
+                                padding-left: 15px;
+                            padding-right: 15px;
+                            padding-top: 8px;
+                            padding-bottom: 15px;
+                            }
                         }
                     }
                 }

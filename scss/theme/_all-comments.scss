@@ -1,14 +1,49 @@
+ .comment-wrapper{
+        margin-bottom:0rem;
+        .comment-item{
+            margin-top: 19px;
+        }
+        .all-icons{
+            li{
+                color: $gray-400;
+                font-size: 16px;
+                &:hover{
+                    color: $gray-800;
+                }
+            }
+        }
+ }
+ .next{
+        color: #FFF;
+        font-family: $font-roboto;
+        font-weight: $font-weight-normal;
+        font-size: 16px;
+        padding: 7px 12px 7px 12px;
+        background-color: $green;
+        margin-top: 23px;
+        margin-bottom: 5px;
+        display: inline-block;
+        position: static;
+        right: 0;
+    }
+    
 
 @media(min-width: 768px){
-  .comment-wrapper{
-    .send-btn{
-        margin-left: -10px;
-    }
-    .comment-inner{
-        .comment-inner-title{
-            color: $gray-900;
-            font-size: 15px;
+    .comment-wrapper{
+        margin-bottom:0rem;
+        .send-btn{
+            margin-left: -10px;
         }
-    }
-}  
+        .comment-inner{
+            .comment-inner-title{
+                color: $gray-900;
+                font-size: 15px;
+            }
+        }
+       
+        .all-icons{
+            margin-left:263px;
+        }
+    } 
+    
 }

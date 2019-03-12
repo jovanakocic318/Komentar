@@ -53,6 +53,46 @@ $(document).ready(function () {
         $(this).next().slideToggle();
 
     });
+    //Form validation
+     $(function () {
+        $(".contact-form").validate({
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass("has-danger");
+                $(element).addClass("form-control-danger");
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                $(element).removeClass('form-control-danger').addClass('form-control-success');
+            },
+            rules: {
+                name: {
+                    required: true
+                },
+                message:{
+                    required:true,
+                   
+                    
+                }
+
+
+            },
+            messages: {
+                name: {
+                    required: "Polje je obavezno"
+                },
+                message:{
+                    required: 'Polje je obavezno',
+                   
+                }
+
+            },
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo($(element).closest('.form-group').find('.error-msg'));
+            }
+
+        });
+    });
     // OWL CAROUSEL START HERE
     if ($('.owl-carousel').length > 0) {
 
@@ -67,15 +107,16 @@ $(document).ready(function () {
         });
         
         $('.lead-slider-news-comments').owlCarousel({
-            items: 3,
-            loop:true,
-            margin:20,
-            responsive:{
+           
+           items: 4,
+            
+                responsive:{
                 0:{
                     items:1
                 },
-               500:{
+                500:{
                     items:2
+                    
                 },
                 991:{
                     items:3

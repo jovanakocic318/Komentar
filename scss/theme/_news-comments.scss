@@ -1,67 +1,85 @@
 $dark-green: #0BAE92;
 $beige: #FFF;
+
+//News comments scss start
 .news-comments{
     .container{
         .title-line-news-comments{
+            position: relative;
             .news-comments-title{
-            padding:11px;
-            background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
-            color: $gray-900;
-            font-family: $font-roboto;
-            font-weight: $font-weight-medium;
-           }
-           &:before {
+                padding:11px;
+                background: linear-gradient(to right, $beige, #F9F9F9, #F7F7F7);
+                color: $gray-900;
+                font-family: $font-roboto;
+                font-weight: $font-weight-medium;
+
+            }
+            &:before {
                 content:'';
-                width:87%;
+                width:100%;
+                background:linear-gradient(to right, #0BAE92 10%, transparent);
                 height:3px;
-                background:linear-gradient(to right, $dark-green, $gray-100);
+                left: 0;
                 position: absolute;
-                
-                
             }
         }
-        
+
         .news-comments-slider{
             .lead-slider-wrapper{
                 .lead-slider-news-comments{
                     .owl-item{
-                        margin-right: 20px;
-                        width: 273px !important;
                         &:nth-of-type(4){
                             margin-right: 0px;
                         }
                     }
                     .owl-dot{
-                        
+
                         font-size: 10px;
                         span{
-                           background: #BABABA;
-                           
+                            background: #BABABA;
+
                         }
                         &:hover span, &.active span {
-                            background:  $green;
+                            background:  $dark-green;
                         } 
-                        
+
                     }
                     .news-comments-item{
                         background: $beige;
                         padding: 15px 33px 10px 33px;
-                        &:before{
-                            content:"\201D";
-                            font-size: 49px;
-                            position: absolute;
-                            top: 56px;
-                            left: 10px;
-                            color: $green;
+                        cite{
+                            &:before{
+                                content:"\201D";
+                                font-size: 49px;
+                                position: absolute;
+                                top: 56px;
+                                left: 4px;
+                                color: $dark-green;
+                            }
+                            &:after{
+                                content:'\201C';
+                                font-size: 49px;
+                                position: absolute;
+                                bottom: 88px;
+                                right: 25px;
+                                color: $dark-green;
+                            }
                         }
+
                         &:after{
-                             content:'\201C';
-                             font-size: 49px;
+                            content:'';
                             position: absolute;
-                            bottom: 88px;
-                            right: 10px;
-                            color: $green;
+                            bottom: -23px;
+                            left: 15px;
+                            width:40px;
+                            height:30px;
+                            display:block;
+                            background-image: url('assets/arrow.png');
+                            background-repeat: no-repeat;
+                            background-size: 100% auto;
+                            background-position: top center; 
                         }
+
                         .news-comments-item-commentator{
                             color: $gray-900;
                         }
@@ -71,30 +89,31 @@ $beige: #FFF;
                             font-family: $font-roboto;
                             font-weight: $font-weight-medium;
                             color: $gray-900;
-                            
+
                         }
                         .news-comments-item-line{
-                          height: 0.1px;
-                          width: 203px;
-                          border: 1.5px solid #E4E2;
-                          margin-top: 10px;
+                            height: 0.1px;
+                            width: 203px;
+                            border: 1.5px solid #E4E2;
+                            margin-top: 10px;
                         }
                         .news-comments-item-title{
                             p{
-                            margin-top: 10px;
-                            color: $gray-700;
+                                margin-top: 10px;
+                                color: $gray-700;
                             }
                         }
-                        .strelica{
-                            content:'';
-                            position:absolute;
-                            width: 20px;
-                            height: 20px;
-                            border: 10px solid transparent;
-                            border-top: 10px solid $beige;
-                            bottom: -2px;
+                        position: relative;
+                        margin-bottom: 1.5rem;
+                        border: 0.5px solid #ABABAB;
+                        margin-left: 10px;
+                        &:hover{
+                            background: $gray-200;
+                            &:after{
+                                display: none;
+                            }
                         }
-                       
+
                     }
                 }
             }
@@ -102,3 +121,4 @@ $beige: #FFF;
 
     }
 }
+//News comments scss end

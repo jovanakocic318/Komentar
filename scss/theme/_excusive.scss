@@ -11,13 +11,14 @@ $gray-850: #8D8B8B;
                 .exclusive-discussions
                 {   
                     background: #FFF;
-                    &:first-child:before {
+                    position: relative;
+                    &:before {
                         content:'';
-                        width:93%;
+                        width:100%;
+                        background:linear-gradient(to right, $green 10%, transparent);
                         height:3px;
-                        background:linear-gradient(to right, $green, $white);
-                        top:-3px;
-                        position: absolute
+                        left: 0;
+                        position: absolute;
                     }
                     .exclusive-title{
                         background:linear-gradient(to right, $white, #F3F3F3);
@@ -40,16 +41,16 @@ $gray-850: #8D8B8B;
                         .exclusive-item-detail{
                             padding-left: 12px;
                             padding-right: 12px;
-                            
+
                             h6{
                                 font-family: $font-roboto;
                                 font-weight: $font-weight-normal;
                                 a{
                                     color: $black;  
                                     &:hover{
-                                                color: $gray-900;
-                                                font-weight: $font-weight-medium;
-                                            }
+                                        color: $gray-900;
+                                        font-weight: $font-weight-medium;
+                                    }
                                 }
                             }
                             p{
@@ -57,7 +58,7 @@ $gray-850: #8D8B8B;
                             }
                         }
                         ul{
-                           
+
                             .numbers-of-comment{
                                 display: inline;
                                 margin-left:6px;
@@ -83,6 +84,8 @@ $gray-850: #8D8B8B;
                                     overflow: hidden;
                                     max-height: 2.6rem;
                                     line-height: 1.3rem;
+                                    font-style: italic;
+
 
                                 }
                                 .commentator-time{
@@ -113,8 +116,8 @@ $gray-850: #8D8B8B;
                                         word-wrap: break-word;
                                         color: $black;
                                         &:hover{
-                                                color: $gray-700;
-                                            }
+                                            color: $gray-700;
+                                        }
 
                                     }
                                 }
@@ -176,18 +179,9 @@ $gray-850: #8D8B8B;
                 {
                     .exclusive-discussions
                     {   
-
-                        &:first-child:before {
-
-                            width:95%;
-
-                        }
                         .exclusive-item{
                             .exclusive-item-detail{
                                 padding-left: 2rem;
-                            }
-                            ul{
-                                padding-left: 3rem;
                             }
                         }
                     }
@@ -196,6 +190,7 @@ $gray-850: #8D8B8B;
         }
     }
 }
+
 @media(min-width: 768px){
     .exclusive{
 
@@ -205,19 +200,11 @@ $gray-850: #8D8B8B;
                 {
                     .exclusive-discussions
                     {   
-
-                        &:first-child:before {
-
-                            width:96%;
-
-                        }
                         .exclusive-item{
                             .exclusive-item-detail{
                                 padding-left: 2rem;
                             }
-                            ul{
-                                padding-left: 3rem;
-                            }
+
                         }
                     }
                 }
@@ -225,35 +212,7 @@ $gray-850: #8D8B8B;
         }
     }
 }
-@media(min-width: 992px){
-    .exclusive{
 
-        .container{
-            .row{
-                .col-sm-18
-                {
-                    .exclusive-discussions
-                    {   
-
-                        &:first-child:before {
-
-                            width:90%;
-
-                        }
-                        .exclusive-item{
-                            .exclusive-item-detail{
-                                padding-left: 0;
-                            }
-                            ul{
-                                padding-left: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media(min-width:1200px){
     .four, .five{
